@@ -5,6 +5,7 @@ filetype plugin indent on
 
 colorscheme molokai
 let mapleader="\\"
+set mouse=a
 
 "" airline
 let g:airline_powerline_fonts = 1
