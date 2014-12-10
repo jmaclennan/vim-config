@@ -7,7 +7,7 @@ colorscheme molokai
 let mapleader="\\"
 set mouse=a
 set number
-
+set ts=4 sw=4
 "" VIM > Mappings
 
 map <c-k> :NERDTree<cr>
@@ -23,3 +23,6 @@ let g:airline_theme="powerlineish"
 let g:airline#extensions#tabline#enabled = 1
 let g:Powerline_symbols ="fancy"
 let g:airline_detect_modified=1
+
+"" Emmet
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
