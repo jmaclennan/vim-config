@@ -3,7 +3,7 @@ cp .vimrc ~/.vimrc
 mkdir -p ~/.vim/autoload
 
 echo "** installing pathogen"
-wget -O https://tpo.pe/pathogen.vim ~/.vim/autoload/pathogen.vim 
+wget -O ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim  
 
 echo "** creating plugin dirs"
 mkdir ~/.vim/bundle
@@ -21,7 +21,7 @@ git clone https://github.com/hail2u/vim-css3-syntax.git
 git clone https://github.com/mattn/emmet-vim
 
 echo "** installing molokai color scheme"
-wget -O https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim ~/.vim/colors/molokai.vim
+wget -O ~/.vim/colors/molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim 
 
 echo " ** copying files"
 cp -R ~/.vim/bundle/vim-css3-syntax/after/syntax/* ~/.vim/syntax/
